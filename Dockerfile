@@ -5,8 +5,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json ./
 
-# RUN apt-get update || : && apt-get install python -y
-
 RUN yarn install
 
 COPY . ./
